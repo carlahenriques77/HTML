@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+@media all {
+
+    body {
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    main {
+        margin: auto;
+        width: 500px;
+        background-color: rgba(255, 255, 255, 0.695);
+        padding-bottom: 50px;
+    }
+
+    img {
+        margin: auto;
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#pc { display: none;}
+    img#tv { display: none;}
+    img#print { display: none;}
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    body {
+        background: black url('../imagens/back-phone.jpg');
+    }
+
+    img#phone { display: block;}
+    img#tablet { display: none;}
+    img#pc { display: none;}
+    img#tv { display: none;}
+    img#print { display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background: black url('../imagens/back-tablet.jpg') center;
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: block;}
+    img#pc { display: none;}
+    img#tv { display: none;}
+    img#print { display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background: black url('../imagens/back-pc.jpg') center;
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#pc { display: block;}
+    img#tv { display: none;}
+    img#print { display: none;}
+}
+
+@media screen and (min-width: 1200px){
+    body {
+        background: black url('../imagens/back-tv.jpg');
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#pc { display: none;}
+    img#tv { display: block;}
+    img#print { display: none;}
+}
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'The after of a print thing, I think?';
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#pc { display: none;}
+    img#tv { display: none;}
+    img#print { display: block;}
+}

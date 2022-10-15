@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Passion One';
+    src: url('fontes/Passion_One/PassionOne-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Sri';
+    src: url('fontes/Sriracha/Sriracha-Regular.ttf');
+}
+
+body {
+    margin: 0%;
+    font-size: 1.5vw;
+}
+
+header {
+    background-color: black;
+
+    padding-top: 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    font-family: 'Passion One';
+    color: white;
+    text-align: center;
+    margin: 0%;
+    padding-top: 10px;
+}
+
+header p {
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}
+
+main {
+
+}
+
+article {
+
+}
+
+article p {
+    font-family: 'Sri';
+    font-size: 2em;
+    text-align: justify;
+    line-height: 1.7em;
+   
+    padding-top: 10px; 
+    margin-left: 30px;
+}
+
+div.girassol {
+    background-image: url('imagens/background001.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   
+    padding-top: 30px;
+    padding-left: 0px;
+    padding-bottom: 30px;
+}
+
+div.girassol p {
+    background-color: rgba(0, 0, 0, 0.379);
+    color: white;
+    display: inline-block;
+}
+
+div.caderno {
+    background-image: url('imagens/background002.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  
+    padding-top: 30px;
+    padding-left: 0px;
+    padding-bottom: 30px;
+}
+
+div.caderno p {
+    background-color: rgba(0, 0, 0, 0.379);
+    color: white;
+    display: inline-block;
+}

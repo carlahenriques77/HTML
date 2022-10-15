@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+
+    <style>
+        body{
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 250px; /* Note: He put "280" here because of the padding. I will be doing less to see if it works. */
+            max-width: 800px;
+            margin: auto;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tempora optio sed quis facilis corporis excepturi alias, deleniti odio at molestias consequatur debitis vel, provident autem! Aliquid placeat mollitia vitae? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam fuga, quis accusamus dolores eligendi blanditiis eaque omnis neque magnam dolorum, illo architecto porro animi nostrum nisi, minima non impedit corrupti.</p>
+        <picture>
+            <source media="(max-width:800px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok Image">
+        </picture>
+    </main>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vário dispositivos diferents ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/image1.png" type="image/png">
+
+        <source media="(max-width: 1050px)" srcset="images/image3.png" type="image/png">
+
+        <img src="images/image3.png" alt="flexibily image">
+    </picture>
+
+    <h1>Reproduzingo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop>
+
+         <source src="midia/The Moon Drops - Nathan Moore.mp3" tupe="audio/mpeg">
+
+         <source src="midia/The Moon Drops - Nathan Moore.OGG" type="audio/ogg">
+
+         <source src="midia/The Moon Drops - Nathan Moore.WAV" type="audio/wav">
+
+         <p>Infelizmente sue navegador não conegue reproduzir áudio. <a href="midia/The Moon Drops - Nathan Moore.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+
+        </audio>
+</body>
+</html>

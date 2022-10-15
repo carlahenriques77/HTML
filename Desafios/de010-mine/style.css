@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf) format('opentype');
+}
+
+body {
+    background-color: #CCC9AA;
+}
+
+header {
+    background-image: linear-gradient(to top, #043D1D, #29A261);
+    margin-top: -25px;
+    margin-left: -9px;
+    margin-right: -9px;
+    font-family: monospace;
+}
+
+header > p, h1 {
+    text-align: center;
+    color: white;
+}
+
+header > h1 {
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+nav > a {
+    margin: 10px;
+    color: rgba(255, 255, 255, 0.658);
+    font-size: large;
+    text-decoration: none;
+}
+
+main {
+    background-color: white;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.127);
+    width: 800px;
+    margin: auto;
+    padding: 10px;
+}
+
+p > a {
+    background-color: #29a26174;
+    color: #043D1D;
+    text-decoration: none;
+}
+
+p > a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: 'idroid';
+    color: #103A24;
+    background-image: linear-gradient(to right, #29A261, white);
+}
+
+article > h1 {
+    color: #103A24;
+    font-family: 'idroid';
+    text-align: justify;
+    font-size: xx-large;
+    margin-top: -5px;
+    margin-bottom: 16px;
+}
+
+p {
+    text-indent: 10px;
+    text-align: justify;
+}
+
+.centerthis1 {
+    padding-left: 75px;
+}
+
+footer {
+    background-color: #1d7144;
+    color: white;
+}
+
+iframe {
+    border: 25px solid #043D1D;
+    margin-left: -10px;
+}
+
+aside {
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.header {
+    background-color: #175C34;
+    border-radius: 5px 5px 0px 0px;
+    color: white;
+    padding: 10px;
+}
+
+.box{
+    background-color: #7DDCA6;
+    border-radius: 0px 0px 5px 5px;
+    text-indent: 10px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.list {
+    display: inline-block;
+    background-color: #7DDCA6;
+    width: 464px;
+}
+
+.list2 {
+    display: inline-block;
+    background-color: #7DDCA6;
+    }
+
+nav > a:hover {
+    color: black;
+    border-radius: 3px 3px 3px 3px;
+    border-top: 5px solid #28a05a;
+    background-color: #28a05a;
+}
+
+li {
+    text-decoration: none;
+}
+
+.none {
+    display: inline;
+    text-decoration: underline;
+}
+
+.this {
+        display: inline;
+}

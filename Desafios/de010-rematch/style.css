@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'android';
+    src: url(fontes/idroid.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url(fontes/BebasNeue-Regular.ttf) format('truetype');
+}
+
+:root {
+    --color0: #80DDAA;
+    --color1: #3BD580;
+    --color2: #2EA363;
+    --color3: #325743;
+    --color4: #185734;
+
+    --base-font: Arial, Helvetica, sans-serif;
+    --font-emphasis: 'bebas', monospace;
+    --android-font: 'android', monospace;
+}
+
+body {
+    background-color: var(--color0);
+    margin: 0px;
+}
+
+header {
+    background-image: linear-gradient(to top, var(--color4), var(--color1));
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.152);
+}
+
+header h1 {
+    font-family: var(--font-emphasis), Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+    margin: 0px;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+header p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    text-align: center;
+    margin: 0px;
+}
+
+nav {
+    padding-bottom: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+    transition-duration: 0.5s;
+}
+
+nav a:hover {
+    background-color: var(--color3);
+}
+
+main {
+    background-color: white;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.152);
+    margin: auto;
+    padding: 15px;
+    min-width: 250px;
+    max-width: 1000px;
+}
+
+main h1, h2 {
+    font-family: var(--android-font);
+    margin-top: 0px;
+    color: var(--color4);
+}
+
+
+main h2 {
+    background-image: linear-gradient(to right, var(--color1), transparent);
+}
+
+main p, h1, h2 {
+    text-indent: 15px;
+}
+
+main a {
+    background-color: var(--color2);
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    padding: 1px 1px 1px 1px;
+}
+
+main a::after {
+    content: '\1F517\00A0';
+}
+
+main img {
+    width: 100%;
+}
+
+main img.getsmall {
+    width: 350px;
+    margin: auto;
+    display: block;
+}
+
+div.video {
+    background-color: var(--color4);
+    position: relative;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+}
+
+div.video > iframe {
+    display: block;
+    margin: auto;
+    background-color: var(--color4);
+    width: 90%;
+    height: 90%;
+    position: absolute;
+}
+
+/*
+
+div.video { --- > This code below there is how he fixed the Video not being
+    in the Center + Adding a "Border" to it.
+        background-color: var(--color4); --- > This was how to "Border was made.
+    He first put the 'iframe' in a div, then gave the div a class and painted it.
+    Much better than the border method, I suppose...
+        margin: 0px -20px 30px -20px; --- > This is how he made the 'Background
+    Color' fit the "main box" completely.
+        padding: 20px; --- > Just a way to fatten it, like always, it seems.
+        padding-bottom: 58%; --- > This is how he "stretched" the 'Background Color'
+    downwards.
+        position: relative; --- > The "position" code seems to hold a VERY Important
+    role in this method, as when you remove it, it basically **breaks** the video.
+    }
+    
+    div.video > iframe { --- >
+        position: absolute; --- > Seems like a **VERY** Important code for this
+    method, as when I removed it, it totally broke it. It made the Video look
+    like a 'Noodle expanded to the sides'...
+        top: 5%; --- > The top and the...
+        left: 5%; --- > Left were made as a method to make the Video go to the Middle
+    of the Background Color, with the Support of the other methods together,
+    apparently. Seems like a mess to me.
+    in the "Border".
+        width: 90%; --- > A way that he used to make th video expands to the 'sides'
+    inside the "Border",
+        height: 90%; --- > and this one was to make it expands 'up a down'. The
+    "width" also worked as the way to 'resize it automatically', like always.
+    } */
+
+ aside {
+    background-color: var(--color1);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px;
+}
+
+aside h3 {
+    background-color: var(--color3);
+    padding: 20px;  
+    margin: -10px -10px 0px -10px;   
+    border-radius: 10px 10px 0px 0px; 
+}
+
+aside ul {
+    columns: 2;
+}
+
+footer p {
+    background-color: var(--color4);
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}

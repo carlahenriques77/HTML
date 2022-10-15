@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+    background-image: url('../pacote-d013/imagens/fundo-madeira.jpg');
+    background-repeat: no-repeat;
+    height: 96vh;
+    margin: 50px;
+}
+
+main {
+    width: 800px;
+    margin: auto;
+}
+
+div.iphone {
+    background-image: url(../pacote-d013/imagens/frame-iphone.png);
+    background-repeat: no-repeat;
+
+    height: 90vh;
+    width: 310px;
+    margin: auto;
+
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="design/stylelogin.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" 
+rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div id="image">
+           <!-- image here -->
+        </div>
+        <div id="text">
+            <h1>Login</h1>
+            <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
+        </div>
+        <div id="iform">
+            <form action="menu.html" method="post" autocomplete="on">
+                <div class="form">
+                    <div class="icons">
+                        <i class="material-icons">person</i>
+                    </div>
+                    <input type="email" name="mail" id="imail" maxlength="30" required autocomplete="email" placeholder="seu e-mail" size="10">
+                </div>
+                <div class="form">
+                    <div class="icons">
+                        <i class="material-icons">vpn_key</i>
+                    </div>
+                    <input type="password" name="pass" id="ipass" minlength="6" maxlength="20" required autocomplete="current-password" placeholder="sua senha" size="10">
+                </div>
+                <div id="buttons">
+                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Esqueci a senha &#x1F4E7;" id="submit2">
+                </div>
+            </form>
+                <input id="appear" type="submit" value="Enviar">
+                <input id="appear" type="submit" value="Esqueci a senha &#x1F4E7;">
+        </div>
+    </main>
+</body>
+</html>

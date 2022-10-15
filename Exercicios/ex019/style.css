@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body {
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: brown;
+}
+
+h1#hhh {
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+}
+
+h2 {
+    color: deeppink;
+}
+
+.basic {
+    color: blanchedalmond;
+}
+
+.intermediary {
+    color: darkgoldenrod;
+}
+
+.advanced {
+    color: dodgerblue;
+    background-color: red;
+}
+
+.right {
+    text-align: right;
+}
